@@ -30,6 +30,13 @@ namespace ProductInfo.API
                     Name = "Fries",
                     Price=60
                     
+                },
+                new ProductDto()
+                {
+                    Id= 4,
+                    Name = "coke",
+                    Price=60
+                    
                 }
             };
 
