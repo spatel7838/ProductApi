@@ -9,8 +9,6 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-variables:
-  - group: DockerCreds		#Variable Group to store Creds
 
 steps:  
 - task: PowerShell@2
