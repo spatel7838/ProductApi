@@ -52,5 +52,7 @@ steps:
       oc project sanjay-b-patel-dev
       oc new-app sanjaybpatel/productapi
       oc expose service productapi
+      oc create route edge productapi --service=productapi
+
     workingDirectory: '$(Build.SourcesDirectory)'
 
