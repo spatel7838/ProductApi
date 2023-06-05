@@ -50,8 +50,8 @@ steps:
     script: |
       oc login --token=sha256~X3ZcWMJcqXSoln6N5FaLLzlHyDW4gO7WWKH524_hCYg --server=https://api.sandbox-m3.1530.p1.openshiftapps.com:6443
       oc project sanjay-b-patel-dev
-      oc new-app sanjaybpatel/productapi
-      oc expose service newproduct
+      oc new-app sanjaybpatel/productapi --name=azurepipelineapi
+      oc expose service azurepipelineapi
 
     workingDirectory: '$(Build.SourcesDirectory)'
 
